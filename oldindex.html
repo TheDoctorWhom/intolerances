@@ -1,0 +1,551 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body>
+<div class="dropdown">
+  <button onclick="dropdownFunction()" class="dropbtn">Filter</button>
+  <div id="myDropdown" class="dropdown-content">
+  		<a onclick="sortFunction('food','myUL')">Food</a>
+  		<a onclick="sortFunction('beverage','myUL')">Beverage</a>
+  		<a onclick="sortFunction('dairy','myUL')">Dairy</a>
+  		<a onclick="sortFunction('fat','myUL')">Fat</a>
+  		<a onclick="sortFunction('fruit','myUL')">Fruit</a>
+  		<a onclick="sortFunction('Grain','myUL')">Grain</a>
+  		<a onclick="sortFunction('misc','myUL')">Misc</a>
+  		<a onclick="sortFunction('protein','myUL')">Protein</a>
+  		<a onclick="sortFunction('seasfood','myUL')">Seasfood</a>
+  		<a onclick="sortFunction('spice','myUL')">Spice</a>
+  		<a onclick="sortFunction('veg','myUL')">Vegatables</a>
+  		<a onclick="sortFunction('sweatener','myUL')">Sweatener</a>
+  		<a onclick="sortFunction('nuts','myUL')">Nuts</a>
+	    <a onclick="sortFunction('LEVELthree','myUL')">Level Three</a>
+	    <a onclick="sortFunction('LEVELtwo','myUL')">Level two</a>
+	    <a onclick="sortFunction('LEVELone','myUL')">Level one</a>
+	  </div>
+</div>
+<style type="text/css">/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}</style>
+
+<button onclick="randomFunction('myUL')">Random</button>
+<input type="text" id="myInput" onkeyup="searchFunction('myUL', 'myInput')" placeholder="Search for...">
+<h1>Food Intolerance/Allergy List</h1>
+
+<ol id="myUL">
+<li><a href="#" class="food LEVELthree protein fat">LEVEL 3 ((Protein)) Soybean/oil (psychosis)</a></li>
+<li><a href="#">LEVEL 2 Symbicort (hiccupps)</a></li>
+<li><a href="#" class="food LEVELthree Grain">LEVEL 2 wheat/gluten (ADD/Crash)</a></li>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 104 Quinoline yellow</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 1200 Polydextrose</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 142 Green S</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 1420 Acetylised starch (modified starch)</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 1440 Hydroxypropyl starch (modified starch)</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 150 d Ammonium sulphite Caramel</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 171 Titanium dioxide</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 172 Iron oxides, iron hydroxides</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 252 Potassium nitrate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 261 Potassium Acetate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 280 Propionic acid</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 283 Potassium Propionate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 300 Ascorbic Acid (vitamin C)</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 309 Synthetic delta-tocopherol</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 311 Octyl Gallate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 315 Isoascorbic acid</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 336 Monopotassium Tartrate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 341 Monocalcium Phosphate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 353 Metatartaric acid</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 380 Triammonium Citrate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 415 Xanthan gum</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 418 Gellane</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 420 Sorbit, Sorbit syrup</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 436 Polyoxyethylene-sorbitan-tristearate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 440 Pectin, amidated pectin</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 466 Carboxymethylcellulose</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 470 b Magnesium salts of edible fatty acids</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 473 Sucrose esters</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 477 Propane</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 495 Sorbitan monopalmitate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 515 Potassium Sulphat</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 523 Aluminium ammonium sulphate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 524 Sodium hydroxide</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 525 Potassium hydroxide</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 552 Calcium silicate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 577 Potassium gluconate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 620 Glutamic acid</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 629 Calcium Guanylate</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 635 Disodium 5�-ribonucleotide</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 902 Candelilla wax</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 938 Argon</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 950 Acesulfame K</li></a>
+<li><a href="#" class="food LEVELthree">LEVEL 3 E 957 Thaumatin</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Beer</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Cocoa (with cream & sugar)</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Coffee substitute made from barley</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Orange Juice</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Pineapple Juice</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Pomegranate Juice</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Sambuca</li></a>
+<li><a href="#" class="food LEVELthree beverage">LEVEL 3 ((Beverage)) Tea (black)</li></a>
+<li><a href="#" class="food LEVELthree dairy">LEVEL 3 ((Dairy)) Buttermilk</li></a>
+<li><a href="#" class="food LEVELthree dairy">LEVEL 3 ((Dairy)) Lactose</li></a>
+<li><a href="#" class="food LEVELthree dairy">LEVEL 3 ((Dairy)) Milk (condensed)</li></a>
+<li><a href="#" class="food LEVELthree dairy">LEVEL 3 ((Dairy)) Milk (evaporated)</li></a>
+<li><a href="#" class="food LEVELthree fat ">LEVEL 3 ((Fat)) Peppermint Oil</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Apple (fuji)</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Apple (gala)</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Bananas</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Cranberries</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Guava</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Kiwis</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Mango</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Olives (black)</li></a>
+<li><a href="#" class="food LEVELthree fruit">LEVEL 3 ((Fruit)) Pomegranates</li></a>
+<li><a href="#" class="food LEVELthree Grain">LEVEL 3 ((Grain)) Bread (brown)</li></a>
+<li><a href="#" class="food LEVELthree Grain">LEVEL 3 ((Grain)) Noodles</li></a>
+<li><a href="#" class="food LEVELthree Grain">LEVEL 3 ((Grain)) Oatmeal</li></a>
+<li><a href="#" class="food LEVELthree Grain">LEVEL 3 ((Grain)) Rice (white)</li></a>
+<li><a href="#" class="food LEVELthree misc">LEVEL 3 ((Misc)) Acetic Acid</li></a>
+<li><a href="#" class="food LEVELthree misc">LEVEL 3 ((Misc)) Arrowroot</li></a>
+<li><a href="#" class="food LEVELthree misc">LEVEL 3 ((Misc)) Flaxseed</li></a>
+<li><a href="#" class="food LEVELthree misc">LEVEL 3 ((Misc)) Mustard</li></a>
+<li><a href="#" class="food LEVELthree nuts">LEVEL 3 ((Nuts)) Chestnuts</li></a>
+<li><a href="#" class="food LEVELthree nuts">LEVEL 3 ((Nuts)) Macadamia Nuts</li></a>
+<li><a href="#" class="food LEVELthree nuts">LEVEL 3 ((Nuts)) Pine Nuts</li></a>
+<li><a href="#" class="food LEVELthree nuts">LEVEL 3 ((Nuts)) Walnuts</li></a>
+<li><a href="#" class="food LEVELthree protein">LEVEL 3 ((Protein)) Pork</li></a>
+<li><a href="#" class="food LEVELthree seasfood">LEVEL 3 ((Seafood)) Shellfish</li></a>
+<li><a href="#" class="food LEVELthree seasfood">LEVEL 3 ((Seafood)) Trout (sea)</li></a>
+<li><a href="#" class="food LEVELthree spice">LEVEL 3 ((Spice)) Cinnamon</li></a>
+<li><a href="#" class="food LEVELthree spice">LEVEL 3 ((Spice)) Cloves</li></a>
+<li><a href="#" class="food LEVELthree spice">LEVEL 3 ((Spice)) Cumin</li></a>
+<li><a href="#" class="food LEVELthree spice">LEVEL 3 ((Spice)) Dill</li></a>
+<li><a href="#" class="food LEVELthree spice">LEVEL 3 ((Spice)) Ginger</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Beets</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Bell Pepper (green)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Cabbage (white)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Cassava Flour</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Cauliflower (raw)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Corn</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Lettuce (butter)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Lettuce (escarole</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Mushroom (button)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Onions (cooked)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Potatoes (white)</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Pumpkin</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Spinach</li></a>
+<li><a href="#" class="food LEVELthree veg">LEVEL 3 ((Veg)) Turnip</li></a>
+<li><a href="#" class="food LEVELtwo sweatener">LEVEL 2 (Sweetener) Stevia</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 1105 Lysozyme</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 124 Ponceau 4R</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 1442 Hydroxypropyl di-starch phosphate (modified starch)</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 160 a Carotene (mixed carotene, Beta-Carotene)</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 210 Benzoic acid</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 215 Sodium ethyl-para-hydroxybenzoate (PHB-Ester)</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 217 Sodiumpropyl-para-hydroxybenzoate (PHB-Ester)</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 227 Calcium Hydrogen Sulphite</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 242 Dimethyl dicarbonate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 302 Calcium L-ascorbate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 310 Propyl Gallate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 321 Butylated hydroxytoluene</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 325 Sodium Lactate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 332 Monopotassium Citrate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 432 Polyoxyethylene-sorbitan-monolaurate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 434 Polyoxyethylene-sorbitan-monopalmitate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 450 Diphosphate, Phosphate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 451 Triphosphate, Phosphate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 452 Polyphosphate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 471 Mono- and diglyceride</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 474 Sucroglycerides</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 483 Stearyl tartrate </li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 507 Hydrochloric acid</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 521 Aluminium sodium sulphate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 558 Bentonite</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 578 Calcium gluconate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 625 Magnesium Diglutamate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 628 Dipotassium Guanylate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 630 Inosinic Acid</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 631 Disodium Ionisate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 632 Dipotassium Ionisate</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 634 Calcium 5�-ribonucleotide</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 640 Glycine and its sodium salts</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 912 Montanic acid ester</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 953 Isomalt</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 954 Saccharin</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 959 Neohesperidin DC</li></a>
+<li><a href="#" class="food LEVELtwo">LEVEL 2 E 965 Maltite, Maltite syrup</li></a>
+<li><a href="#" class="food LEVELtwo beverage">LEVEL 2 ((Beverage)) Cocoa (with milk)</li></a>
+<li><a href="#" class="food LEVELtwo beverage">LEVEL 2 ((Beverage)) Lager</li></a>
+<li><a href="#" class="food LEVELtwo beverage">LEVEL 2 ((Beverage)) Rum</li></a>
+<li><a href="#" class="food LEVELtwo beverage">LEVEL 2 ((Beverage)) Vodka</li></a>
+<li><a href="#" class="food LEVELtwo beverage">LEVEL 2 ((Beverage)) Whisky</li></a>
+<li><a href="#" class="food LEVELtwo dairy">LEVEL 2 ((Dairy)) Milk (sheep)</li></a>
+<li><a href="#" class="food LEVELtwo fat ">LEVEL 2 ((Fat)) Butter (salted)</li></a>
+<li><a href="#" class="food LEVELtwo fat ">LEVEL 2 ((Fat)) Coconut Oil</li></a>
+<li><a href="#" class="food LEVELtwo fat ">LEVEL 2 ((Fat)) Cod Liver Oil</li></a>
+<li><a href="#" class="food LEVELtwo fat ">LEVEL 2 ((Fat)) Sunflower Oil</li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Apple (jazz)</li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Currants (red, black, etc.)</li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Oranges</li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Raspberries</li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Strawberries </li></a>
+<li><a href="#" class="food LEVELtwo fruit">LEVEL 2 ((Fruit)) Tomatoes (raw)</li></a>
+<li><a href="#" class="food LEVELtwo Grain">LEVEL 2 ((Grain)) Quinoa</li></a>
+<li><a href="#" class="food LEVELtwo misc">LEVEL 2 ((Misc)) Chocolate (dark)</li></a>
+<li><a href="#" class="food LEVELtwo misc">LEVEL 2 ((Misc)) Oyster Sauce</li></a>
+<li><a href="#" class="food LEVELtwo misc">LEVEL 2 ((Misc)) Tapioca</li></a>
+<li><a href="#" class="food LEVELtwo nuts">LEVEL 2 ((Nuts)) Brazil Nuts</li></a>
+<li><a href="#" class="food LEVELtwo nuts">LEVEL 2 ((Nuts)) Peanuts</li></a>
+<li><a href="#" class="food LEVELtwo nuts">LEVEL 2 ((Nuts)) Pistachio</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Alpha-Lactalbumin</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Bacon</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Beef Jerky</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Lamb</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Liver (lamb)</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Liver (pig)</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Roe-Deer</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Turkey</li></a>
+<li><a href="#" class="food LEVELtwo protein">LEVEL 2 ((Protein)) Veal</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Clams</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Herring</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Lobster</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Mackerel</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Mussels, general</li></a>
+<li><a href="#" class="food LEVELtwo seasfood">LEVEL 2 ((Seafood)) Sardine</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Cardamom</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Paprika</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Parsley</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Pepper (black)</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Pepper (red/ cayenne)</li></a>
+<li><a href="#" class="food LEVELtwo spice">LEVEL 2 ((Spice)) Salt (sea)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Asparagus</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Beans (runner)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Bell Pepper (orange)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Brussels Sprouts</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Cabbage (cooked)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Celery (raw)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Edamame Beans</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Leek</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Lettuce (chicory)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Mushroom (oyster)</li></a>
+<li><a href="#" class="food LEVELtwo veg">LEVEL 2 ((Veg)) Okra</li></a>
+<li><a href="#" class="food LEVELone sweatener">LEVEL 1 (Sweetener) Honey</li></a>
+<li><a href="#" class="food LEVELone sweatener">LEVEL 1 (Sweetener) Maple Syrup</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 100 Curcumin</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 101 Riboflavin</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 110 Sunset Yellow FCF</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 120 Cochineal, Carminic Acid</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 122 Carmoisine</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 123 Amaranth</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 127 Erythrosine</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 1404 Oxidierte starch</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 1450 Starch sodium octenylsuccinate (modified starch)</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 150 a Caramel</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 150 b Sulphite lye Caramel</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 162 Beetroot red (betanin)</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 163 Anthocyanins</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 170 Calcium carbonate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 213 Calcium benzoate, benzoic acid</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 218 Methyl-para-hydroxbenzoate (PHB-Ester)</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 223 Sodium Metabisulphite</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 224 Potassium Metabisulphite</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 226 Calcium Sulphite</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 234 Nisin</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 239 Hexamethylene-tetramine</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 250 Sodium nitrite</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 281 Sodium Propionate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 296 Malic acid</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 306 Natural tocopherols (Vitamin E)</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 312 Dodecyl Gallate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 322 Lecithins</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 326 Potassium Lactate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 327 Calcium Lactate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 331 Monosodium Citrate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 338 Orthophosphoric Acid</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 339 Monosodium Phosphate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 340 Monopotassium Phosphate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 350 Sodium Malate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 352 Calcium Malate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 357 Potassium adipate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 403 Ammonium Alginate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 405 Propylene Glycol Alginate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 406 Agar</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 407 a Eucheuma algae, treated</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 416 Karaya Gum</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 417 Tara meal</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 461 Methylcellulose</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 463 Hydroxypropylcellulose</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 472 b Lactic acid esters of mono and diglycerides</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 476 Polyglycerol polyricinoleate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 481 Sodium Stearoyl</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 500 Sodium Carbonate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 509 Calcium chloride</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 512 Tin II Chloride</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 513 Sulphuric acid</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 526 Calcium hydroxide</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 530 Magnesium oxide</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 535 Sodium ferrocyanide</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 555 Aluminium Potassium silicate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 622 Monopotassium Glutamate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 627 Disodium Guanylate</li></a>
+<li><a href="#" class="food LEVELone">LEVEL 1 E 633 Dicalcium ionisate</li></a>
+<li><a href="#" class="food LEVELone beverage">LEVEL 1 ((Beverage)) Alcohol</li></a>
+<li><a href="#" class="food LEVELone beverage">LEVEL 1 ((Beverage)) Ale</li></a>
+<li><a href="#" class="food LEVELone beverage">LEVEL 1 ((Beverage)) Apple Juice</li></a>
+<li><a href="#" class="food LEVELone beverage">LEVEL 1 ((Beverage)) Tea (jasmine)</li></a>
+<li><a href="#" class="food LEVELone beverage">LEVEL 1 ((Beverage)) Tea (oolong)</li></a>
+<li><a href="#" class="food LEVELone dairy">LEVEL 1 ((Dairy)) Cheddar Cheese</li></a>
+<li><a href="#" class="food LEVELone dairy">LEVEL 1 ((Dairy)) Milk (boiled)</li></a>
+<li><a href="#" class="food LEVELone fat ">LEVEL 1 ((Fat)) Butter</li></a>
+<li><a href="#" class="food LEVELone fat ">LEVEL 1 ((Fat)) Olive Oil</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Acai Berry</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Apple (golden delicious)</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Apples (cooked)</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Apricots</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Bilberries</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Blueberries</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Cherries</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Coconut</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Galia Melon</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Grapefruit (white)</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Honeydew Melon</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Lemons</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Peaches</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Plantain</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Quince</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Raisins</li></a>
+<li><a href="#" class="food LEVELone fruit">LEVEL 1 ((Fruit)) Tomatoes (cooked)</li></a>
+<li><a href="#" class="food LEVELone Grain">LEVEL 1 ((Grain)) Bread (baguette)</li></a>
+<li><a href="#" class="food LEVELone Grain">LEVEL 1 ((Grain)) Bread (rye)</li></a>
+<li><a href="#" class="food LEVELone Grain">LEVEL 1 ((Grain)) Buckwheat</li></a>
+<li><a href="#" class="food LEVELone Grain">LEVEL 1 ((Grain)) Corn Flour (maize)</li></a>
+<li><a href="#" class="food LEVELone Grain">LEVEL 1 ((Grain)) Rice (brown)</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Chocolate (white)</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Cornflakes</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Hemp</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Hops</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Soy Sauce</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Vanilla</li></a>
+<li><a href="#" class="food LEVELone misc">LEVEL 1 ((Misc)) Vinegar (malt)</li></a>
+<li><a href="#" class="food LEVELone nuts">LEVEL 1 ((Nuts)) Hazelnuts</li></a>
+<li><a href="#" class="food LEVELone nuts">LEVEL 1 ((Nuts)) Pecans</li></a>
+<li><a href="#" class="food LEVELone protein">LEVEL 1 ((Protein)) Duck</li></a>
+<li><a href="#" class="food LEVELone protein">LEVEL 1 ((Protein)) Liver (ox)</li></a>
+<li><a href="#" class="food LEVELone protein">LEVEL 1 ((Protein)) Rabbit</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Crayfish</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Halibut</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Plaice</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Prawns</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Salmon</li></a>
+<li><a href="#" class="food LEVELone seasfood">LEVEL 1 ((Seafood)) Tuna</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Aniseed</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Basil</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Coriander</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Fennel</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Salt (pink himalayan)</li></a>
+<li><a href="#" class="food LEVELone spice">LEVEL 1 ((Spice)) Salt (table)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Artichoke</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Beans (green)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Beans (lima)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Bell Pepper (yellow)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Cabbage (raw)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Celery (cooked)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Endive</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Kale</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Mushroom (portabella)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Peas (field)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Squash (butternut)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Squash (spaghetti)</li></a>
+<li><a href="#" class="food LEVELone veg">LEVEL 1 ((Veg)) Yuca (cassava)</li></a>
+<li><a href="#" class="food LEVELtwo nuts">LEVEL 2 ((Nuts)) Almond</a></li>
+<li><a href="#" class="food LEVELthree seed">LEVEL 3 ((Seed)) Cottonseed</a></li>
+<li><a href="#" class="food LEVELtwo seed">LEVEL 2 ((Seed)) Seasame Seed</a></li>
+<li><a href="#" class="food LEVELone seafood">LEVEL 1 ((Seafood)) Shrimp</a></li>
+
+</ol>
+
+<script>
+function searchFunction(elementid, inputid) {
+    var input, filter, ol, li, a, i, txtValue;
+    input = document.getElementById(inputid);
+    filter = input.value.toUpperCase();
+    ul = document.getElementById(elementid);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function randomFunction(elementid){
+  ul = document.getElementById(elementid);
+  li = ul.getElementsByTagName("li");
+  var rand = Math.floor(Math.random()*li.length);
+  loop = true;
+  while (loop){
+      if (li[rand].style.display === ""){
+          for (i = 0; i < li.length; i++) {
+                if (i == rand) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+           loop = false;
+        }
+        else{
+            rand = Math.floor(Math.random()*li.length);
+            loop= true;
+        }
+    }
+}
+function sortFunction(filter, elementid){
+  var input, ol, li, a, i, txtValue;
+    ul = document.getElementById(elementid);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.className;
+        if (txtValue.includes(filter)) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function filterFunction(filter, elementid){
+  var input, ol, li, a, i, txtValue;
+    ul = document.getElementById(elementid);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.className;
+        if (txtValue.includes(filter)) {
+            li[i].style.display = "none";
+        } else {
+            // li[i].style.background = "";
+        }
+    }
+}
+function markasplayedFunction(elementid){
+  var input, ol, li, a, i, txtValue;
+    ul = document.getElementById(elementid);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.className;
+        if (li[i].style.display === "") {
+            // li[i].classList.remove("notplayed");
+            // li[i].classList.add("deyalp");
+            a.className = a.className.replace("notplayed", "deyalp");
+        } else {
+            // li[i].style.background = "black";
+        }
+    }
+}
+function dropdownFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https:browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https:/code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https:/www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
