@@ -41,7 +41,7 @@ if (video.TYPE === "Veg"){
         <p>{video.TYPE}</p>
         <p>Level: {video.LEVEL}</p>
         <div className="ui image">
-        <img src={typeImg} ></img>
+        <img src={typeImg} alt={video.TYPE}></img>
         </div>
       </div>
 
