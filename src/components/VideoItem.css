@@ -9,7 +9,15 @@
 .ui.segment:last-child {
     margin-bottom: 1rem;
 }
+.ui.image{
+  /*background-color: blue;*/
+  /*bottom: 0px !important;*/
+      margin-top: auto !important;
+/*  margin-right: auto !important;
+    margin-top: auto !important;*/
+}
 img {
-  /*max-width: 180px;*/
-  /*bottom: 0 !important;*/
+  height: 100px !important;
+
+  /*min-height: 100px;*/
 }

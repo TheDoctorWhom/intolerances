@@ -36,7 +36,7 @@ if (video.TYPE === "Veg"){
 
   return (
 
-      <div className="ui column segment">
+      <div className="ui four wide column segment">
         <h4 className="ui header">{video.NAME}</h4>
         <p>{video.TYPE}</p>
         <p>Level: {video.LEVEL}</p>

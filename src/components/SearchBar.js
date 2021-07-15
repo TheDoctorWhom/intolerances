@@ -42,22 +42,22 @@ const SearchBar = ({ onFormSubmit }) => {
             <label>
               <input
                 type="radio"
-                value="NUMBER"
-                checked={selectedOption === "NUMBER"}
+                value="TYPE"
+                checked={selectedOption === "TYPE"}
                 onChange={(event) => setSelectedOption(event.target.value)}
               />
-              &nbsp;Number
+              &nbsp;Type
             </label>
           </div>
           <div className="radio three wide column">
             <label>
               <input
                 type="radio"
-                value="THEME"
-                checked={selectedOption === "THEME"}
+                value="LEVEL"
+                checked={selectedOption === "LEVEL"}
                 onChange={(event) => setSelectedOption(event.target.value)}
               />
-              &nbsp;Theme
+              &nbsp;Level
             </label>
           </div>
         </div> {/*end of options*/}
