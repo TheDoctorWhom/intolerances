@@ -3,6 +3,11 @@
   align-items: center !important;
   curser: pointer;
 }
+.ui.segment{
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: left 100% bottom 0%;
+}
 .ui.segment:first-child{
   margin-top: 1rem;
 }

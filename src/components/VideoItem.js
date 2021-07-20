@@ -10,7 +10,7 @@ if (video.TYPE === "Veg"){
 }else if (video.TYPE === "Beverage"){
   typeImg = "../img/Beverage.png"
 }else if (video.TYPE === "Chemical"){
-  typeImg = "../img/Chemical.jpg"
+  typeImg = "../img/Chemical.png"
 }else if (video.TYPE === "Dairy"){
   typeImg = "../img/Dairy.png"
 }else if (video.TYPE === "Fat"){
@@ -22,11 +22,11 @@ if (video.TYPE === "Veg"){
 }else if (video.TYPE === "Misc"){
   typeImg = "../img/Misc.png"
 }else if (video.TYPE === "Protein"){
-  typeImg = "../img/Protein.jpg"
+  typeImg = "../img/Protein.png"
 }else if (video.TYPE === "Seed"){
-  typeImg = "../img/Seed.webp"
+  typeImg = "../img/Seed.png"
 }else if (video.TYPE === "Spice"){
-  typeImg = "../img/Spice.jpg"
+  typeImg = "../img/Spice.png"
 }else if (video.TYPE === "Nuts"){
   typeImg = "../img/Nut.png"
 }else if (video.TYPE === "Seafood"){
@@ -36,12 +36,12 @@ if (video.TYPE === "Veg"){
 
   return (
 
-      <div className="ui four wide column segment">
+      <div className="ui four wide column segment" style={{ backgroundImage: `url(${typeImg})` }}>
         <h4 className="ui header">{video.NAME}</h4>
         <p>{video.TYPE}</p>
         <p>Level: {video.LEVEL}</p>
         <div className="ui image">
-        <img src={typeImg} alt={video.TYPE}></img>
+        {/*// <img src={typeImg} alt={video.TYPE}></img>*/}
         </div>
       </div>
 
