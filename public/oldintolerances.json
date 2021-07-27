@@ -1,0 +1,575 @@
+{
+    "intolerances":[
+        {
+            "LEVEL": 3,
+            "TYPE": "Protein",
+            "NAME": "Soybean / oil(psychosis)"
+        },
+        {
+            "LEVEL": 2,
+            "TYPE": "Grain",
+            "NAME": "wheat / gluten(ADD / Crash)"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 104 Quinoline yellow"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 1200 Polydextrose"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 142 Green S"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 1420 Acetylised starch(modified starch)"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 1440 Hydroxypropyl starch(modified starch)"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 150 d Ammonium sulphite Caramel"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 171 Titanium dioxide"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 172 Iron oxides,"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "iron hydroxides"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 252 Potassium nitrate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 261 Potassium Acetate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 280 Propionic acid"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 283 Potassium Propionate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 300 Ascorbic Acid(vitamin C)"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 309 Synthetic delta - tocopherol"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 311 Octyl Gallate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 315 Isoascorbic acid"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 336 Monopotassium Tartrate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 341 Monocalcium Phosphate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 353 Metatartaric acid"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 380 Triammonium Citrate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 415 Xanthan gum"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 418 Gellane"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 420 Sorbit, Sorbit syrup"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 436 Polyoxyethylene - sorbitan - tristearate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 440 Pectin, amidated pectin"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 466 Carboxymethylcellulose"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 470 b Magnesium salts of edible fatty acids"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 473 Sucrose esters"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 477 Propane"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 495 Sorbitan monopalmitate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 515 Potassium Sulphat"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 523 Aluminium ammonium sulphate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 524 Sodium hydroxide"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 525 Potassium hydroxide"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 552 Calcium silicate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 577 Potassium gluconate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 620 Glutamic acid"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 629 Calcium Guanylate"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 635 Disodium 5� - ribonucleotide"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 902 Candelilla wax"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 938 Argon"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 950 Acesulfame K"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Chemical",
+            "NAME": "E 957 Thaumatin"
+        },
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Beer"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Cocoa(with cream & sugar)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Coffee substitute made from barley"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Orange Juice"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Pineapple Juice"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Pomegranate Juice"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Sambuca"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Beverage",
+            "NAME": "Tea(black)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Dairy",
+            "NAME": "Buttermilk"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Dairy",
+            "NAME": "Lactose"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Dairy",
+            "NAME": "Milk(condensed)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Dairy",
+            "NAME": "Milk(evaporated)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fat",
+            "NAME": "Peppermint Oil"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Apple(fuji)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Apple(gala)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Bananas"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Cranberries"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Guava"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Kiwis"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Mango"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Olives(black)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Fruit",
+            "NAME": "Pomegranates"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Grain",
+            "NAME": "Bread(brown)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Grain",
+            "NAME": "Noodles"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Grain",
+            "NAME": "Oatmeal"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Grain",
+            "NAME": "Rice(white)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Misc",
+            "NAME": "Acetic Acid"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Misc",
+            "NAME": "Arrowroot"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Misc",
+            "NAME": "Flaxseed"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Misc",
+            "NAME": "Mustard"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Nuts",
+            "NAME": "Chestnuts"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Nuts",
+            "NAME": "Macadamia Nuts"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Nuts",
+            "NAME": "Pine Nuts"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Nuts",
+            "NAME": "Walnuts"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Protein",
+            "NAME": "Pork"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Seafood",
+            "NAME": "Shellfish"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Seafood",
+            "NAME": "Trout(sea)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Spice",
+            "NAME": "Cinnamon"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Spice",
+            "NAME": "Cloves"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Spice",
+            "NAME": "Cumin"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Spice",
+            "NAME": "Dill"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Spice",
+            "NAME": "Ginger"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Beets"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Bell Pepper(green)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Cabbage(white)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Cassava Flour"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Cauliflower(raw)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Corn"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Lettuce(butter)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Lettuce(escarole)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Mushroom(button)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Onions(cooked)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Potatoes(white)"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Pumpkin"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Spinach"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Veg",
+            "NAME": "Turnip"
+        },
+
+        {
+            "LEVEL": 3,
+            "TYPE": "Seed",
+            "NAME": "Cottonseed"
+        }
+    ]
+}
