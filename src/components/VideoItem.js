@@ -37,7 +37,7 @@ if (video.TYPE === "Veg"){
 
 let backGroundColor = "";
 
-if (video.LEVEL == 3){
+if (video.LEVEL === 3){
   backGroundColor = "red";
 }else if (video.LEVEL === 2){
   backGroundColor = "yellow";
