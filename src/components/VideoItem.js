@@ -31,12 +31,28 @@ if (video.TYPE === "Veg"){
   typeImg = "../img/Nut.png"
 }else if (video.TYPE === "Seafood"){
   typeImg = "../img/Seafood.png"
+}else if (video.TYPE === "Sweetener"){
+  typeImg = "../img/Sweetener.png"
+}
+
+let backGroundColor = "";
+
+if (video.LEVEL == 3){
+  backGroundColor = "red";
+}else if (video.LEVEL === 2){
+  backGroundColor = "yellow";
+}else if (video.LEVEL === 1){
+  backGroundColor = "orange";
 }
 
 
   return (
 
-      <div className="ui four wide column segment" style={{ backgroundImage: `url(${typeImg})` }}>
+      <div className="ui four wide column segment"
+      style={{
+        backgroundImage: `url(${typeImg})`,
+        backgroundColor: `${backGroundColor}`
+        }}>
         <h4 className="ui header">{video.NAME}</h4>
         <p>{video.TYPE}</p>
         <p>Level: {video.LEVEL}</p>
